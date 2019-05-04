@@ -1,0 +1,301 @@
+    body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+   
+    margin: 0;
+}
+
+#tracker{
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.counter{
+    margin: 30vh auto 0vh auto;
+    text-align: center;
+    width: 30vw;
+    
+}
+
+.count{
+    background:  #7e57c2;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3.2em;
+}
+
+.operations{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 50%;
+    margin: 0.04em auto;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    
+
+
+}
+
+
+.counter #highs{
+    font-size: 0.99em;
+    font-weight: 200;
+    margin: 1.3em 0;
+
+}
+
+.counter #highs b{
+    color: #7e57c2;
+    font-size: 1.4em;
+    font-weight: 900;
+
+}
+
+.operations h1{
+    background-color: #7e57c2;
+    margin: 0 0.9px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.operations h1:active{
+    opacity: 0.5;
+}
+
+.submitSection input{
+    width: 47%;
+    display: block;
+    margin: 0.3em auto;
+    padding: 0.5em 0.3em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.submitSection button, .confirmationBox button{
+    width: 50%;
+    display: inline-block;
+    background: transparent;
+    border: 1.1px solid #7e57c2;
+    padding: 0.6em;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.4s;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bolder; */
+
+}
+
+.submitSection button:active, .confirmationBox button:active{
+    background-color: #7e57c2b2;
+    border: none;
+    color: white;
+    
+}
+
+
+.confirmationBox{
+    background: white;
+    padding: 25vh 0.8em;
+    margin: 2em auto;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0px 0px 16px 1px #7e57c241;
+    color: rgb(54, 54, 53);
+    position: relative;
+    font-size: 1.3em;
+    
+    
+}
+
+.confirmationBox h1{
+    position: absolute;
+    top: 0.3%;
+    right: 1%;
+    font-weight: lighter;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: #7e57c2;
+    font-weight: 0.6em;
+    border: 1px solid #7e57c2;
+    padding: 0em 0.46em ;
+    border-radius: 100px;
+    transform: scale(0.7)
+}
+
+.confirmationBox h1:hover{
+    background-color: #7e57c2;
+    color: white;
+    transition: all 0.4s;
+    
+}
+
+.confirmationBox p{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.confirmationBox button:hover{
+ background-color: #7e57c2;
+ color: white;
+}
+
+.confirmationBox button, .confirmationBox span{
+    /* width: 30%; */
+    margin: 2em auto;
+    padding: 0;
+
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: 10% 80%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons span{
+    display: block;
+    color: rgb(138, 135, 135);
+    text-decoration: underline;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+
+.congratulationBox, .failedBox{
+    padding: 13vh 2vw;
+    margin: 2em auto;
+    text-align: center;
+    box-shadow: 0px 0px 16px 1px #7e57c241;
+    width: 40vw;
+    
+
+
+}
+
+.congratulationBox p{
+    font-size: 1.2em;
+}
+
+.badge{
+    margin: 0em 0 4em 0;
+    
+    
+}
+
+.badge h2{
+    color: rgb(228, 227, 227);
+    text-shadow: 1px 2px 2px #7e57c2;
+    font-size: 2em;
+    
+}
+
+.badge img{
+    width: 20%; 
+}
+
+
+
+
+/* Responsive for Tablet. */
+@media (min-width: 760px) and (max-width: 1024px) {
+    body{
+        height: 70vh;
+       
+    }
+
+    .counter{
+       
+        width: 70vw;
+        
+    }
+
+
+    .confirmationBox p{
+        width: 80%;
+
+    }
+
+    .buttons{
+        grid-template-columns: 50% 50%;
+        
+    }
+
+    .congratulationBox, .failedBox{
+        width: 70vw;
+    }
+    
+
+
+
+
+}
+
+/* Responsive for mobile */
+
+@media (min-width: 320px) and (max-width: 480px){
+    .counter{
+        width: 100vw;
+
+    }
+
+    .operations{
+        width: 89%;
+    }
+    .count{
+        width: 90vw;
+    }
+
+    .submitSection input{
+        width: 80%;
+        margin: 3em auto;
+        border: 0.92px solid rgba(0, 0, 0, 0.315);
+        border-radius: 4px;
+    }
+
+    .submitSection button, .confirmationBox button{
+        widows: 60%;
+    }
+
+
+    .confirmationBox, .congratulationBox, .failedBox{
+        width: 89vw;
+        padding: 25vh 0;
+    }
+
+    .confirmationBox p{
+        width: 100%;
+
+    }
+
+    .buttons{
+        grid-template-columns: 50% 50%;
+    }
+
+    .confirmationBox button{
+        width: 100%;
+    }
+
+
+
+
+
+}
+

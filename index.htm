@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet"> 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <title>FIREBASE PROJECT</title>
+</head>
+<body>
+
+
+   
+    
+    <div class="counter">
+        <h1 id="highs"> Loading Leaderboard......</h1>
+        <div class="count">
+            <h1>0</h1>
+        </div>
+
+        <div class="operations">
+            <h1>+</h1>
+            <h1>-</h1>
+        </div>
+
+        <div class="submitSection">
+            <input class="input" type="text" placeholder="Your Name">
+            <button type="submit" id="initialSubmit">Submit</button>
+        </div>
+    </div>
+
+    <div class="confirmationBox">
+        <h1>X</h1>
+        <p>
+            Are you sure you want to submit this? You score is just - <span id="tracker">0</span>
+            You sure you cant do better?
+        </p>
+
+        <div class="buttons">
+            <span>Go Back</span><button id="submitButton">Submit!</button>
+        </div>
+
+        <h4 id="currentHighScore"></h4>
+    </div>
+    
+
+    <div class="congratulationBox">
+       
+        <div class="badge">
+            <img src="./assets/badge.png" alt="">
+            <h2>Congratulations</h2>
+        </div>
+
+        <p>
+           Congratulations You beat the current highscore, but dont feel like you
+           are the KING yet, someone would beat you, so keep working, keep going and
+           be better thanb your yesterday self! 
+        </p>
+
+
+        
+    </div>
+
+    <div class="failedBox">
+       
+        <div class="badge">
+            <img src="./assets/thumbsDown.png" alt="">
+            <h2>You Lost!</h2>
+        </div>
+
+        <p>
+            <span id="resultDiffence"></span>
+            I really thought you could do better. Well you tried, But this isn't 
+            the end of Life. You can still be  a victor, even if you've just failed
+            to the world most simplest game. But if you feeling really bad and need
+            someone to talk to after this great defeat, just jit me up on <a href="https://www.instagram.com/jamescancode">Instagram</a>
+        </p>
+
+
+        
+    </div>
+
+<script src="./functions.js"></script>
+</body>
+</html>
