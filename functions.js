@@ -13,36 +13,6 @@ window.onload = windowHasloaded();
 
 function windowHasloaded(){
 
-    let Month  = [
-        "January",
-        "Febuary",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-
-
-    ]
-
-    let day = [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-    ]
-
-
-
-
     let today = new Date();
 
     let currentName;
@@ -132,6 +102,7 @@ function windowHasloaded(){
 button.on("click",  function(){
 
    
+   
     let data = {
         names:  $(".input").val(),
         score: $(count).text(),
@@ -168,7 +139,7 @@ button.on("click",  function(){
         }
     }
 
-   
+
     
 })
 
@@ -176,10 +147,18 @@ button.on("click",  function(){
 
 
 initalSubmit.on("click", function(){
+
+    if($(".input").val() !== ""){
     confirmBox.show(111);
     body.children(".counter").hide(400);
     $("#tracker").text(parseInt($(count).text()));
     $("#tracker").css("color", "#7e57c2") 
+
+    }   
+
+    else{
+        $(".input").css("border", "3px solid rgba(255, 0, 0, 0.61)")
+    }
     
 
 })
